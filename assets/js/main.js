@@ -16,7 +16,11 @@ $("input").on("keypress", function(event){
     if(event.which === 13){
         input_value = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span class='del'>X</span>" + input_value + "</li>");
+        $("ul").append("<li><span class='del'><i class='fas fa-trash-alt'></i></span>" + input_value + "</li>");
     }
 })
 
+// Toggle input on + click
+$("h1 i").on("click", function(){
+    $("input").fadeToggle();
+})

@@ -3,15 +3,22 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* gradient */
+body{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1{
     font-size: 1.5em;
     font-weight: 500;
     /* text-transform: uppercase; */
     margin: 0;
     padding: 5px 0px 5px 20px;
-    color: #E63946;
     color: #F1FAEE;
     background-color: #1D3557;
+    background-color: #222222;
 }
 
 ul{
@@ -21,9 +28,9 @@ ul{
 }
 
 li{
-    height: 5vh;
+    height: 40px;
     background-color: #A8DADC;
-    line-height: 5vh;
+    line-height: 40px;
 }
 
 li:nth-child(2n){
@@ -31,24 +38,33 @@ li:nth-child(2n){
 }
 
 input{
+    font-family: 'Ubuntu';
+    font-size: 1.07em;
     width: 100%;
-    height: 5vh;
-    font-size: 1.1em;
-    padding: 5px 0px 5px 33px;
-    outline: none;
+    height: 40px;
+    padding: 5px 0px 5px 20px;
     box-sizing: border-box;
+    outline: none;
+    border:none;
+    color: #222222;
+    background-color: #f1faee;
+}
+
+h1 i{
+    float: right;
+    padding: 1px 12px 5px 0;
 }
 
 #container{
     background-color: #A8DADC;
-    margin: 0 auto;
+    margin: 80px auto;
     width: 100vh;
     height: 100vh;
     /* desktop version */
     max-width: 400px;
     max-height: 500px;
     box-shadow: 0 0 50px rgba(0,0,0,0.7);
-    border: solid 3px #1D3557;
+    /* border: solid 3px #1D3557; */
 }
 
 .done{
@@ -57,6 +73,19 @@ input{
 }
 
 .del{
-    color: red;
-    margin: 10px;
+    color: #f1faee;
+    background-color: #E63946;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    transition: 0.2s linear;
+    display: inline-block;
+    /* to hide at first */
+    width: 0px;
+    opacity: 0;
+}
+
+li:hover .del{
+    width: 40px;
+    opacity: 1;
 }
