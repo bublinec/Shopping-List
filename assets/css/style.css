@@ -1,19 +1,14 @@
 body{
-    background-color: #222222;
     font-family: 'Ubuntu', sans-serif;
-}
-
-/* gradient */
-body{
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1{
     font-size: 1.5em;
     font-weight: 500;
-    /* text-transform: uppercase; */
     margin: 0;
     padding: 5px 0px 5px 20px;
     color: #F1FAEE;
@@ -21,20 +16,9 @@ h1{
     background-color: #222222;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    height: 40px;
-    background-color: #A8DADC;
-    line-height: 40px;
-}
-
-li:nth-child(2n){
-    background-color: #F1FAEE;;
+h1 i{
+    float: right;
+    padding: 1px 12px 5px 0;
 }
 
 input{
@@ -50,21 +34,30 @@ input{
     background-color: #f1faee;
 }
 
-h1 i{
-    float: right;
-    padding: 1px 12px 5px 0;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    height: 40px;
+    line-height: 40px;
+    background-color: #A8DADC;
+}
+
+li:nth-child(2n){
+    background-color: #F1FAEE;;
 }
 
 #container{
-    background-color: #A8DADC;
-    margin: 80px auto;
     width: 100vh;
     height: 100vh;
-    /* desktop version */
     max-width: 400px;
     max-height: 500px;
+    margin: 80px auto;
     box-shadow: 0 0 50px rgba(0,0,0,0.7);
-    /* border: solid 3px #1D3557; */
+    background-color: #A8DADC;
 }
 
 .done{
@@ -73,14 +66,14 @@ h1 i{
 }
 
 .del{
-    color: #f1faee;
-    background-color: #E63946;
     height: 40px;
     margin-right: 20px;
     text-align: center;
     transition: 0.2s linear;
     display: inline-block;
-    /* to hide at first */
+    color: #f1faee;
+    background-color: #E63946;
+    /* to hide at before hover */
     width: 0px;
     opacity: 0;
 }
