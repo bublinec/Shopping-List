@@ -1,3 +1,21 @@
 body{
-    background-color: black;
+    background-color: #222222;
+}
+
+#container{
+    text-align: center;
+    background-color: cadetblue;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 98%;
+}
+
+.done{
+    color: #3b3a3a;
+    text-decoration: line-through;
+}
+
+.del{
+    color: red;
+    margin: 10px;
 }
